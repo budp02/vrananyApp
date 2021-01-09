@@ -1,0 +1,1016 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700&subset=latin,latin-ext);
+
+body {
+    width: 100%;
+    margin: 0;
+    font: 14px/21px "Segoe UI", Helvetica, Arial, sans-serif;
+    color: #444444;
+}
+
+h2, h3, h4, h5 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 34px;
+    line-height: 50px;
+    margin-bottom: 14px;
+    color: #18a8f0;
+}
+
+h3 {
+    font-size: 24px;
+    padding: 7px 0;
+    color: #786b5a;
+}
+
+h4 {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 3px;
+    color: #808080;
+}
+
+h5 {
+    color: #ffffff;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+header {
+    padding: 20px 0 0;
+    background-image: url("../img/bg.jpg?v=2");
+    background-color: #ffffff;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header.admin {
+    background-image: url("../img/bgAdm.jpg?v=2");
+}
+
+header div#respons {
+    display: none;
+}
+
+header div.photoSchool {
+    width: 915px;
+    height: 386px;
+    margin: 0 auto;
+    border: 12px solid #ffffff;
+}
+
+header div.infoSchool {
+    width: 915px;
+    height: 135px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+header div.infoSchool div.logo {
+    width: 400px;
+    height: 135px;
+    background-image: url("../img/logo.png?v=3");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header div.infoSchool div.address {
+    width: 500px;
+    color: #ffffff;
+    font: 22px/26px 'Oswald', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 135px;
+    font-weight: bold;
+}
+
+header nav {
+    width: 1000px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+header nav a {
+    z-index: 50;
+    width: 100px;
+    height: 100px;
+    border: 12px solid #ffffff;
+    font: 15px Oswald, sans-serif;
+    border-radius: 50%;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header nav a:hover, header nav a.active {
+    border-color: #e6e6e6;
+}
+
+header nav a:nth-child(1) {
+    margin-top: 40px;
+    background-color: #9370db;
+}
+
+header nav a:nth-child(2) {
+    margin-top: 15px;
+    background-color: #E4242E;
+}
+
+header nav a:nth-child(3) {
+    margin-top: 5px;
+    background-color: #ff6d00;
+}
+
+header nav a:nth-child(4) {
+    background-color: #ffd600;
+}
+
+header nav a:nth-child(5) {
+    margin-top: 5px;
+    background-color: #1abc9c;
+}
+
+header nav a:nth-child(6) {
+    margin-top: 15px;
+    background-color: #60d1e0;
+}
+
+header nav a:nth-child(7) {
+    margin-top: 40px;
+    background-color: #51bd1f;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+header nav a:hover, header nav a.active {
+    color: #ffffff;
+}
+
+footer {
+    width: 915px;
+    margin: 0 auto;
+}
+
+footer div.projects {
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 24px;
+}
+
+footer div.projects div {
+    width: 120px;
+    height: 120px;
+}
+
+footer div.menuCopy {
+    flex-wrap: nowrap;
+    padding: 20px 0;
+    background-color: #DCDCDC;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Oswald', sans-serif;
+}
+
+footer div.menuCopy .menu {
+    width: 80%;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer div.menuCopy .menu div a {
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+div.copyright {
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+
+main {
+    width: 915px;
+    margin: 0 auto;
+}
+
+.uvod div.prispevek, .tridy div.prispevek {
+    width: 875px;
+    height: auto;
+    border-radius: 7px;
+    color: black;
+    background-color: cornsilk;
+    padding: 15px;
+    margin: 12px 0;
+}
+
+.uvod div.prispevek div img, .tridy div.prispevek div img, main p img, .uvod div img, .dokumenty div img, .skolniJidelna div img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.uvod div.prispevek div div.zverejneni, .tridy div.prispevek div div.zverejneni {
+    color: gray;
+    text-align: right;
+    font-size: 10px;
+}
+
+.uvod a img.vodorovne, .uvod a img.svisle, .fotogalerie a img.vodorovne, .fotogalerie a img.svisle {
+    vertical-align: middle;
+    display: inline-block;
+    box-shadow: 3px 3px 10px #000;
+}
+
+.uvod a img.vodorovne, .fotogalerie a img.vodorovne {
+    width: 150px;
+    margin: 5px;
+}
+
+.uvod a img.svisle, .fotogalerie a img.svisle {
+    height: 138px;
+    margin: 5px;
+}
+
+.fotogalerie div.ownpagination {
+    padding: 10px;
+    font-size: large;
+    text-align: center;
+    width: 100%;
+}
+
+.fotogalerie div.ownpagination a.active {
+    font-weight: bold;
+    text-decoration: none;
+    color: #D62424;
+}
+
+.fotogalerie div.ownpagination a {
+    padding: 5px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.fotogalerie form input.download {
+    color: #fff;
+    background-color: #007bff;
+    margin: 0;
+    overflow: visible;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid #007bff;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+.fotogalerie form input:hover {
+    cursor: pointer;
+}
+
+.skolniJidelna table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.skolniJidelna thead {
+    background-color: rgb(24, 168, 240);
+    color: black;
+    font-weight: bolder;
+}
+
+.skolniJidelna td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.tridy .bags {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tridy .bags img {
+    height: 128px;
+    width: 128px;
+}
+
+.skolni_rok table.rozvrh {
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid white;
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+.skolni_rok table.rozvrh th {
+    padding: 5px;
+    background: #18A8F0;
+    font-weight: bold;
+    color: white;
+    border: 1px solid white;
+    vertical-align: middle;
+}
+
+.skolni_rok table.rozvrh tr.hodiny th {
+    background: #786B5A;
+}
+
+.skolni_rok table.rozvrh td {
+    padding: 5px;
+    background: #fff;
+    border-bottom: 1px solid #cecece;
+    border-top: 1px solid transparent;
+    vertical-align: middle;
+}
+
+.skolni_rok table.rozvrh tbody tr.hodiny th {
+    width: 11.1%;
+}
+
+.skolni_rok p span.ident2 {
+    width: 250px;
+    display: inline-block;
+}
+
+.skolni_rok div.employee {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skolni_rok div.employee div {
+    width: 50%;
+}
+
+div#contact.modal, div#login.modal {
+    z-index: 9999;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+div#contact.modal form.modal-content.animate, div#login.modal form.modal-content.animate {
+    animation: zoom .6s;
+}
+
+div#contact.modal form.modal-content.animate div.container, div#login.modal form.modal-content.animate div.container {
+    width: 320px;
+    height: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    border-top: 10px solid #1e90ff;
+    margin: 0 auto;
+}
+
+div#contact.modal form.modal-content.animate div.container div.imgcontainer, div#login.modal form.modal-content.animate div.container div.imgcontainer {
+    text-align: center;
+    position: relative;
+}
+
+div#contact.modal form.modal-content.animate div.container h1, div#login.modal form.modal-content.animate div.container h1 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Verdana';
+    font-weight: bold;
+}
+
+div#contact.modal form.modal-content.animate div.container input.user_id, div#login.modal form.modal-content.animate div.container input.user_id {
+    background: #fff url(../img/panacci.jpg?v=2) 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+div#contact.modal form.modal-content.animate div.container input.user_email {
+    background: #fff url(../img/zavinace.jpg?v=2) 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+div#login.modal form.modal-content.animate div.container input.user_pass {
+    background: #fff url(../img/zamecky.jpg?v=2) 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+div#contact.modal form.modal-content.animate div.container input.user_id, div#contact.modal form.modal-content.animate div.container input.user_pass, div#contact.modal form.modal-content.animate div.container input#user_pass1, div#contact.modal form.modal-content.animate div.container input.user_email, div#contact.modal form.modal-content.animate div.container input#captcha, div#login.modal form.modal-content.animate div.container input.user_id, div#login.modal form.modal-content.animate div.container input.user_pass {
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding: 0 20px 0 50px;
+    outline: 0;
+}
+
+div#contact.modal form.modal-content.animate div.container textarea.user_notes {
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding: 0 20px 0 50px;
+    outline: 0;
+    resize: none;
+}
+
+div#contact.modal form.modal-content.animate div.container div h4 p a, div#login.modal form.modal-content.animate div.container div h4 p a {
+    color: #18a8f0;
+    text-decoration: none;
+}
+
+div#contact.modal form.modal-content.animate div.container input#sendForm.tlacitko, div#login.modal form.modal-content.animate div.container input.tlacitko, div#redakcnisystem a.tlacitko {
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    background: #1e90ff;
+    border: 1px solid #1e90ff;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    outline: 0;
+    cursor: pointer;
+}
+
+div#contact.modal form.modal-content.animate div.container div.imgcontainer a#fancybox-close1, div#login.modal form.modal-content.animate div.container div.imgcontainer a#fancybox-close1 {
+    position: absolute;
+    top: -40px;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    background: transparent url(../img/fancy_close.png?v=3) -30px 0;
+    cursor: pointer;
+    z-index: 1103;
+}
+
+div#contact.modal form.modal-content.animate div.container input#captcha {
+    background: #fff url(../img/hash.jpg?v=2) 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+div#contact.modal form.modal-content.animate div.container textarea#user_notes {
+    background: #fff url(../img/post_gray.jpg?v=2) 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.redakcnisystem {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.redakcnisystem div a {
+    color: white;
+}
+
+.uvod.adminPart .container form div.fileUpload, .skolniJidelna.adminPart .container form div.fileUpload, .dokumenty.adminPart .container form div.fileUpload, .uvod.adminPart .container form div.part_notification {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.uvod.adminPart .container form .part_notification div div.custom-file {
+    margin: 5px 0;
+}
+
+.uvod.adminPart .container form div.part_notification div div {
+    width: 100%;
+}
+
+.uvod.adminPart .container form div.part_notification div, .uvod.adminPart .container form div.categoryFoto {
+    width: 45%;
+}
+
+.uvod.adminPart .container form div input#nadpis, .uvod.adminPart .container form div textarea, .tridy.adminPart .container form div input#nadpis, .tridy.adminPart .container form div textarea, .fotogalerie.adminPart .container form div input#nazev {
+    width: 500px;
+}
+
+.skolniJidelna.adminPart .container form div div, .fotogalerie.adminPart .container form div div, .fotogalerie.adminPart .container form div select, .fotogalerie.adminPart .container select {
+    width: 525px;
+}
+
+.skolni_rok.adminPart table.table.table-striped.notschedule thead tr th {
+    width: 25%;
+}
+
+.skolni_rok.adminPart table.table.table-striped.schedule tbody tr td, .skolni_rok.adminPart table.table.table-striped.schedule thead tr th {
+    width: 11%;
+}
+
+#deleteUSERS, #updateUSERS, #updateZVONENI, #deleteZVONENI, #updateUDALOSTI, #deleteUDALOSTI, #updateROZVRH, #updateNotification, #updatePRAVA {
+    display: none;
+}
+
+.skolni_rok.adminPart table tbody tr td input#hodina1, .skolni_rok.adminPart table tbody tr td input#hodina2, .skolni_rok.adminPart table tbody tr td input#hodina3, .skolni_rok.adminPart table tbody tr td input#hodina4, .skolni_rok.adminPart table tbody tr td input#hodina5, .skolni_rok.adminPart table tbody tr td input#hodina6, .skolni_rok.adminPart table tbody tr td input#hodina7, .skolni_rok.adminPart table tbody tr td input#hodina8 {
+    width: 30px
+}
+
+.uvod.adminPart .container div div.prispevek, .tridy.adminPart .container div div.prispevek {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.uvod.adminPart .container div .prispevek .prispevekText, .tridy.adminPart .container div .prispevek .prispevekText {
+    width: 95%;
+}
+
+.uvod.adminPart .container div .prispevek .prispevekEdit, .tridy.adminPart .container div .prispevek .prispevekEdit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40px;
+}
+
+.contactList {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(24, 168, 240);
+    margin: 25px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.contactInfo {
+    width: 50%;
+    background-color: rgb(24, 168, 240);
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 500px;
+}
+
+.contactForm {
+    width: 50%;
+    min-height: 500px;
+}
+
+.contactForm .container #formMail .form-group .form-control {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.contactForm .container {
+    margin: 0 auto;
+    width: auto;
+}
+
+.contactForm .container h3 {
+    text-align: center;
+}
+
+.kontakt .contactList .contactInfo div h3 {
+    color: #FFFFFF;
+}
+
+.kontakt .contactList .contactInfo div span {
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+}
+
+.good {
+    color: green;
+}
+
+.bad {
+    color: red;
+}
+
+a img {
+    cursor: pointer;
+}
+
+.login div.login_form {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.login div.login_form div {
+    margin-left: 10px;
+}
+
+.login h1 {
+    text-align: center;
+}
+
+.img-wrap {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+}
+
+.img-wrap .close {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    z-index: 100;
+    background-color: #FFF;
+    padding: 5px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: .2;
+    text-align: center;
+    font-size: 22px;
+    line-height: 15px;
+    border-radius: 50%;
+}
+
+.img-wrap:hover .close {
+    opacity: 1;
+}
+
+.foto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    align-content: space-between;
+}
+
+.switcher {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 50px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: gray;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.switcher input {
+    display: none;
+}
+
+.switcher__indicator::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #f00;
+    border-radius: 50%;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-animation-name: pulsein;
+    animation-name: pulsein;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+}
+
+.switcher__indicator::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 40px;
+    height: 4px;
+    background-color: #f00;
+    border-radius: 10px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+input:checked + .switcher__indicator::after {
+    background-color: #29ce9a;
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+    -webkit-animation-name: pulseout;
+    animation-name: pulseout;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+}
+
+input:checked + .switcher__indicator::before {
+    background-color: #29ce9a;
+}
+
+input:disabled + .switcher__indicator::after, input:disabled + .switcher__indicator::before {
+    background-color: #e5e5e5;
+}
+
+@-webkit-keyframes pulsein {
+    0%, 100% {
+        top: 0;
+        height: 20px;
+        width: 20px;
+    }
+    50% {
+        top: 3px;
+        height: 14px;
+        width: 26px;
+    }
+}
+
+@keyframes pulsein {
+    0%, 100% {
+        top: 0;
+        height: 20px;
+        width: 20px;
+    }
+    50% {
+        top: 3px;
+        height: 14px;
+        width: 26px;
+    }
+}
+
+@-webkit-keyframes pulseout {
+    0%, 100% {
+        top: 0;
+        height: 20px;
+        width: 20px;
+    }
+    50% {
+        top: 3px;
+        height: 14px;
+        width: 26px;
+    }
+}
+
+@keyframes pulseout {
+    0%, 100% {
+        top: 0;
+        height: 20px;
+        width: 20px;
+    }
+    50% {
+        top: 3px;
+        height: 14px;
+        width: 26px;
+    }
+}
+
+.skolniJidelna.adminPart #formLISTEK div textarea {
+    width: 150px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    outline: 0;
+    resize: none;
+}
+
+.menuItemsCanteen {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1000px) {
+    header .photoSchool {
+        display: none;
+    }
+
+    header nav {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    header nav a:nth-child(1), header nav a:nth-child(2), header nav a:nth-child(3), header nav a:nth-child(4), header nav a:nth-child(5), header nav a:nth-child(6), header nav a:nth-child(7) {
+        margin-top: 0;
+    }
+
+    header div.infoSchool {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    header div.infoSchool div.logo {
+        margin: 0 auto;
+    }
+
+    header div.infoSchool div.address {
+        height: 50px;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    footer {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    footer div.projects {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .uvod div.prispevek, .tridy div.prispevek {
+        width: 90%;
+        margin: 0 auto 12px auto;
+    }
+
+    .skolni_rok p span.ident2 {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .contactInfo {
+        width: 30%;
+    }
+
+    .contactForm {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contactList {
+        flex-direction: column;
+    }
+
+    .contactForm {
+        width: 100%;
+        order: 0;
+    }
+
+    .contactInfo {
+        width: 100%;
+        order: 1;
+        padding: 0;
+        text-align: center;
+    }
+
+    .contactInfo div {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header nav.topnav.responsive {
+        height: 364px;
+        z-index: 222;
+        display: block;
+    }
+
+    header nav.topnav {
+        display: none;
+        z-index: 222;
+    }
+
+    header nav a {
+        height: 50px;
+        border: 0;
+        width: 100%;
+        border-radius: 0;
+        border-bottom: 2px solid white;
+    }
+
+    header div#respons {
+        display: block;
+        width: 100%;
+        height: 58px;
+        background-color: black;
+    }
+
+    header div#respons div#con.containerHeader {
+        display: inline-block;
+        cursor: pointer;
+        float: right;
+        margin-right: 10px;
+        margin-top: 6px;
+        padding: 2px;
+        border: 2px solid black;
+        border-radius: 2px;
+        background-color: white;
+    }
+
+    header div#respons div#con.containerHeader div.bar1, header div#respons div#con.containerHeader div.bar2, header div#respons div#con.containerHeader div.bar3 {
+        width: 40px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    header div#respons div#con.containerHeader.change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    header div#respons div#con.containerHeader.change .bar2 {
+        opacity: 0;
+    }
+
+    header div#respons div#con.containerHeader.change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+    /*header end*/
+    .skolni_rok div.employee {
+        display: block;
+    }
+
+    .skolni_rok div.employee div {
+        width: 100%;
+    }
+
+    .uvod.adminPart .container form div.fileUpload, .skolniJidelna.adminPart .container form div.fileUpload, .uvod.adminPart .container form div.part_notification {
+        display: block;
+    }
+
+    .uvod.adminPart .container form div.fileUpload div, .skolniJidelna.adminPart .container form div.fileUpload div, .uvod.adminPart .container form div.part_notification div {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .uvod.adminPart .container form div input#nadpis, .uvod.adminPart .container form div textarea, .tridy.adminPart .container form div input#nadpis, .tridy.adminPart .container form div textarea, .tridy.adminPart .container form div div, .skolniJidelna.adminPart .container form div div, .fotogalerie.adminPart .container form div input#nazev, .fotogalerie.adminPart .container form div div, .fotogalerie.adminPart .container form div select, .fotogalerie.adminPart .container select {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contactForm .container #formMail .form-group input#firstName, .contactForm .container #formMail .form-group input#email, .contactForm .container #formMail .form-group textarea#message {
+        width: 90%;
+    }
+
+    .contactForm .container {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    header div.infoSchool div.logo {
+        display: none;
+    }
+}

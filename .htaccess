@@ -1,0 +1,23 @@
+AddCharset UTF-8 .html
+#komprese souborů
+AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/javascript text/css application/javascript application/x-httpd-php
+
+# podstrceni
+RewriteEngine on
+
+RewriteCond %{HTTPS} off [NC]
+RewriteRule (.*) https://www.zsvranany.cz%{REQUEST_URI} [L,R=301,QSA]
+
+RewriteRule uvod index.php
+
+RewriteRule aktualni-skolni-rok schoolYear.php
+
+RewriteRule fotky-akci-skoly photogalery.php
+
+RewriteRule tridy schoolClasses.php
+
+RewriteRule dokumenty documents.php
+
+RewriteRule skolni-jidelna schoolCanteen.php
+
+RewriteRule kontakt contact.php
