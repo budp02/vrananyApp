@@ -12,7 +12,7 @@ $pageTitle = "Kontakty - ";
 ?>
 <!DOCTYPE html>
 <html lang="cs">
-<?php include "inc/head.php" ?>
+<?php include "inc/headContact.php" ?>
 <link rel="stylesheet" href="css/bootstrap.min.css?v=16">
 <link rel="stylesheet" href="css/bootstrap-reboot.min.css?v=3">
 <body>
