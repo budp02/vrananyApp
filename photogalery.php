@@ -29,7 +29,7 @@ $fotografieHeader->execute([
     ':id' => $photoArray[$offset]
 ]);
 $resultFotogalerieHeader = $fotografieHeader->fetch(PDO::FETCH_ASSOC);
-$pageTitle = "Fotky akcí školy";
+$pageTitle = "Fotky akcí školy - ";
 
 $error = "";
 if (isset($_POST['createpdf'])) {
